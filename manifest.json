@@ -27,6 +27,7 @@
    // "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiVLWh9Iz6Jx2uXEYV4VmskpPBq8ZG7WPiLgjldNEN9fSAfu/+JnXqz2LldTyZsP+K77fMgR6At0Q8TlkWIsEOV3IZzkKrqYdc9DJ7AmlZ1NDTpAoi0wz6m0zOku/0TzrvR/FehltPkvkh3R6otNOdGNwIYtVQc6S7V5lsyyVSvsIfCsRzLIz2kcvtPpnj8QTvIyCcAWXf13GoddBKSExpp1XyfZ9U4ijqJVUa17iGS8V9HDDO6uEnw5cQ520c0ooxEGYYY6zy5+J5XJpeIDAQNiyJVXbkj7q+eo8+aTrpiP1zyw4xskr8AKDlf/vevSZmTlecSOm8dJFONFVcADNXQIDAQAB",
    "manifest_version": 2,
    "name": "ExodiousUI",
+   "description": "This extension makes your life easier on svadba.com",
    "page_action": {
    	"default_icon": "img/16.png",
    	"default_popup": "index.live.html",

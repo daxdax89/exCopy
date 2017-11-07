@@ -1,38 +1,42 @@
 {
-   "background": {
-      "page": "background.html"
-   },
-   "content_scripts": [ {
-      "css": [ "css/svadba.css" ],
-      "js": [ "js/jquery.js", "js/translations.js", "js/cookie.js", "js/profileContent.js", "js/hashchange.js" ],
-      "matches": [ "*://*.svadba.com/Login/Men/*" ],
-      "run_at": "document_end"
-   }, {
-      "css": [ "css/svadba.css" ],
-      "js": [ "js/jquery.js", "js/cookie.js", "js/content.live.js", "js/md5.js", "js/hashchange.js" ],
-      "matches": [ "*://*.svadba.com/chat/*" ],
-      "run_at": "document_end"
-   }, {
-      "css": [ "css/svadba_helper.css" ],
-      "js": [ "js/jquery.js", "js/translations.js", "js/svadba_helper.js" ],
-      "matches": [ "*://*.svadba.com/Login/Home.aspx" ],
-      "run_at": "document_end"
-   } ],
-   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
-   "icons": {
-      "128": "img/128.png",
-      "16": "img/16.png",
-      "48": "img/48.png"
-   },
-   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiVLWh9Iz6Jx2uXEYV4VmskpPBq8ZG7WPiLgjldNEN9fSAfu/+JnXqz2LldTyZsP+K77fMgR6At0Q8TlkWIsEOV3IZzkKrqYdc9DJ7AmlZ1NDTpAoi0wz6m0zOku/0TzrvR/FehltPkvkh3R6otNOdGNwIYtVQc6S7V5lsyyVSvsIfCsRzLIz2kcvtPpnj8QTvIyCcAWXf13GoddBKSExpp1XyfZ9U4ijqJVUa17iGS8V9HDDO6uEnw5cQ520c0ooxEGYYY6zy5+J5XJpeIDAQNiyJVXbkj7q+eo8+aTrpiP1zyw4xskr8AKDlf/vevSZmTlecSOm8dJFONFVcADNXQIDAQAB",
+	"background": {
+		"page": "background.html"
+	},
+	"content_scripts": [ {
+		"css": [ "css/svadba.css" ],
+		"js": [ "js/jquery.js", "js/translations.js", "js/cookie.js", "js/profileContent.js", "js/hashchange.js" ],
+		"matches": [ "*://*.svadba.com/Login/Men/*" ],
+		"run_at": "document_end"
+	}, {
+		"css": [ "css/svadba.css" ],
+		"js": [ "js/jquery.js", "js/cookie.js", "js/content.live.js", "js/md5.js", "js/hashchange.js" ],
+		"matches": [ "*://*.svadba.com/chat/*" ],
+		"run_at": "document_end"
+	}, {
+		"css": [ "css/svadba_helper.css" ],
+		"js": [ "js/jquery.js", "js/translations.js", "js/svadba_helper.js" ],
+		"matches": [ "*://*.svadba.com/Login/Home.aspx" ],
+		"run_at": "document_end"
+	} ],
+	"content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+	"icons": {
+		"128": "img/128.png",
+		"16": "img/16.png",
+		"48": "img/48.png"
+	},
+   // "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiVLWh9Iz6Jx2uXEYV4VmskpPBq8ZG7WPiLgjldNEN9fSAfu/+JnXqz2LldTyZsP+K77fMgR6At0Q8TlkWIsEOV3IZzkKrqYdc9DJ7AmlZ1NDTpAoi0wz6m0zOku/0TzrvR/FehltPkvkh3R6otNOdGNwIYtVQc6S7V5lsyyVSvsIfCsRzLIz2kcvtPpnj8QTvIyCcAWXf13GoddBKSExpp1XyfZ9U4ijqJVUa17iGS8V9HDDO6uEnw5cQ520c0ooxEGYYY6zy5+J5XJpeIDAQNiyJVXbkj7q+eo8+aTrpiP1zyw4xskr8AKDlf/vevSZmTlecSOm8dJFONFVcADNXQIDAQAB",
    "manifest_version": 2,
-   "name": "Svadba ChatOS chat optimizer",
+   "name": "ExodiousUI",
    "page_action": {
-      "default_icon": "img/16.png",
-      "default_popup": "index.live.html",
-      "default_title": "ChatOS Svadba chat - meaning of love"
+   	"default_icon": "img/16.png",
+   	"default_popup": "index.live.html",
+   	"default_title": "ExodiousUI"
    },
-   "permissions": [ "tabs", "*://*.svadba.com/*", "*://*.chatoptimizer.com/*", "unlimitedStorage", "*://*.anastasiadate.com/*", "notifications" ],
+   "permissions": [ "tabs", "*://*.svadba.com/*",
+   	// "*://*.chatoptimizer.com/*",
+   	"unlimitedStorage",
+   	"*://*.anastasiadate.com/*",
+   	"notifications" ],
    "update_url": "https://clients2.google.com/service/update2/crx",
-   "version": "1.8.5"
+   "version": "0.0.1"
 }
